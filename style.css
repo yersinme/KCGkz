@@ -1,0 +1,413 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    border: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif, Helvetica, sans-serif;
+}
+
+.text {
+    color: #436064;
+    font-size: 28px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.red_color {
+    color: rgba(201, 42, 42, 0.979);
+    font-size: 28px;
+    font-weight: bold;
+}
+
+
+
+
+.container {
+    max-width: 1170px;
+    margin: 0px auto;
+    padding: 0px 20px;
+    padding-bottom: 100px;
+}
+
+header {
+    max-width: 100%;
+    position: fixed;
+    padding: 30px 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: -1px 8px 23px rgba(0, 0, 0, 0.05);
+    background-color: #fff;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+    transition: top 0.3s;
+}
+
+
+.header_hidden {
+    top: -100px;
+}
+
+/* Общие стили */
+.header_logo {
+    color: #000;
+    font-size: 30px;
+    font-weight: bold;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* border: none; */
+}
+
+.header_logo span {
+    color: rgba(201, 42, 42, 0.979);
+}
+
+.header_links {
+    display: flex;
+    justify-content: space-around;
+    width: 800px;
+}
+
+.header_link {
+    margin: 0 10px;
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.header_link:hover {
+    color: rgba(201, 42, 42, 0.979);
+    box-shadow: -1px 8px 23px rgba(0, 0, 0, 0.05);
+}
+
+.lang {
+    color: grey;
+}
+
+.lang:hover {
+    color: blue;
+}
+
+.header_btns {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    font-size: 10px;
+}
+
+.burger-menu {
+    display: none;
+}
+
+.header_main {
+    max-width: 100%;
+    /* margin-bottom: 100px; */
+    padding: 150px 50px 0 50px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    border-bottom: 5px solid rgba(201, 42, 42, 0.979);
+    background-color: #ebeceeb9;
+    background-image: url(./images/Иллюстрация.png);
+    background-repeat: no-repeat;
+    background-position-y: 100px;
+    background-position-x: 300px;
+    background-size: contain;
+    height: 600px;
+}
+
+.main_content {
+    display: block;
+    flex-direction: column;
+    padding-left: 20px;
+    max-width: 100%;
+    background-image: url(./images/kcg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.main_content_logo {
+    max-width: 500px;
+    box-sizing: border-box;
+}
+
+.main_content img {
+    max-width: auto;
+    display: block;
+}
+
+.main_content_text {
+    padding-top: 450px;
+    font-size: 20px;
+}
+
+.nav_list {
+    padding-top: 15px;
+    padding-left: 15px;
+    display: flex;
+    gap: 15px;
+}
+
+.nav_item {
+    cursor: pointer;
+}
+
+/* О нас */
+
+.main_about-us {
+    /* position: relative; */
+    /* overflow: hidden; */
+    max-width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* gap: 50px; */
+    /* margin: 120px 220px 300px 220px; */
+    /* margin-bottom: 100px; */
+    padding: 70px 150px 100px 150px;
+    background-color: #ebeceeb9;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.171);
+}
+
+.main_about-us:hover {
+    box-shadow: 0 5px 0 rgba(201, 42, 42, 0.979);
+}
+
+.about_title {
+    padding-bottom: 20px;
+}
+
+
+/* НАШИ ЦЕННОСТИ  */
+
+.main_value {
+    max-width: 100%;
+    position: relative;
+    background-color: #ebecee;
+    background-size: contain;
+    background-image: url(./images/Mask\ Group\ 1.png);
+    background-repeat: no-repeat;
+    /* margin: 150px 100px 0 100px; */
+    padding: 50px;
+    padding-top: 50px;
+    padding-left: 350px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.171);
+    border-radius: 15px;
+}   
+
+.main_value:hover {
+    box-shadow: 0 5px 0 rgba(201, 42, 42, 0.979);
+}
+
+.value_title {
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.value {
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    padding: 20px 15px;
+    border-radius: 15px;
+}
+
+.value:hover {
+    box-shadow: 1px 1px 0px rgba(0, 0, 0, 1);
+}
+
+.value h2 {
+    color: #436064;
+}
+
+.value p {
+    opacity: 2;
+    max-width: 100%;
+    margin: 5px;
+}
+
+/* Философия */
+
+.main_filo {
+    text-align: center;
+    /* max-width: 1000px; */
+    /* margin: 0 auto; */
+    /* margin-top: 150px; */
+    padding: 50px 80px 70px 80px;
+    background-color: #ebeceeb9;
+    border-radius: 15px;
+}
+
+.filo_title {
+    padding: 30px 50px;
+}
+
+footer {
+    background-color: grey;
+    color: #fff;
+    max-width: 100%;
+    height: 100px;
+    padding: 100px 200px;
+}
+
+.footer {
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.foot_title {
+    padding-bottom: 25px;
+}
+
+.phone_list {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.work_time {
+    font-weight: bold;
+}
+
+.up {
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    z-index: 2000;
+}
+
+.up img {
+    width: 80px;
+    height: 80px;
+    border-radius: 15px;
+}
+
+.up img:hover {
+    box-shadow: -1px 8px 23px rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Добавьте новые стили для мобильных устройств ниже */
+
+@media (max-width: 768px) {
+
+    /* Примените стили для мобильных устройств здесь */
+    .text {
+        font-size: 12px;
+    }
+
+    header {
+        padding: 20px;
+    }
+
+    .header_links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header_link {
+        margin: 10px 0;
+        font-size: 12px;
+        width: 150px;
+    }
+
+    .header_btns {
+        width: 100%;
+        text-align: center;
+    }
+
+    .burger-menu {
+        display: block;
+    }
+
+    .header_links.show-on-mobile {
+        display: none;
+    }
+
+    .main {
+        margin: 20px;
+    }
+
+    .header_main {
+        padding: 50px 20px 0 20px;
+        background-image: none;
+    }
+
+    .main_content {
+        margin-left: 20px;
+        flex-direction: column;
+        background-position-y: 150px;
+
+    }
+
+    .main_about-us {
+        margin: 20px;
+        padding: 30px 20px 10px 20px;
+    }
+
+    .about_text {
+        font-size: 12px;
+    }
+
+    .main_value {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    /* .value_title {
+        font-size: 25px;
+    } */
+
+    .value {
+        padding: 15px;
+        width: 100%;
+    }
+
+    .up img {
+        width: 50px;
+        height: 50px;
+        border-radius: 15px;
+    }
+
+    .main_filo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* .filo_title {
+        font-size: 14px;
+    } */
+
+    footer {
+        font-size: 18px;
+    }
+
+    .foot_title {
+        font-size: 14px;
+    }
+
+    .foot_text {
+        font-size: 12px;
+    }
+}

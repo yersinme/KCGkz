@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Шапка сайта -->
+    <header>
+
+
+        <a href="#upper" class="header_logo"><span>K</span>CG.kz</a> <!--ссылка вверх -->
+
+        <div class="header_links">
+            <a href="#about-us" class="header_link">О нас</a>
+            <a href="#value" class="header_link">Для партнеров</a>
+            <a href="#contacts" class="header_link">Контакты</a>
+        </div>
+
+        <div class="header_btns">
+            <p">Email: info@kazcg.kz</p>
+                <p">Телефон: +7 778 746 33 62</p>
+                    <p">WhatsApp: +7 778 896 8934</p>
+        </div>
+
+        <!-- Бургер-меню -->
+        <div class="burger-menu" onclick="toggleMenu()">☰</div>
+    </header>
+
+
+
+
+    <div id="upper"></div>
+    <!-- контент с картинкой -->
+    <div class="container">
+
+        <div id="up" class="header_main">
+            <div class="main_content">
+
+                <p class="main_content_text">ДОВЕРЬТЕ РЕШЕНИЕ ПРОФЕССИОНАЛАМ</p>
+
+                <nav class="nav_list">
+                    <a href="tel:+77064065614" class="nav_item nav_call" onclick="callNumber()"><img
+                            src="./images/call.png" alt="звонить"></a>
+                    <button class="nav_item nav_wha" onclick="openWhatsApp()"><img src="./images/wha.png"
+                            alt=""></button>
+                    <button class="nav_item nav_insta" onclick="openInstagram()"><img src="./images/instagram.png"
+                            alt=""></button>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- О нас -->
+    <div class="container">
+        <div class="main_about-us" id="about-us">
+            <div class="about_title red_color">О НАС</div>
+            <div class="text about_text">Основным видом деятельности ТОО «Коллекторское агентство Казахстан Коллектор
+                Груп»
+                (далее – Агентство) является деятельность по возврату просроченной задолженности. В своей деятельности
+                Агентство полностью руководствуется Конституцией Республики Казахстан, Гражданским кодексом Республики
+                Казахстан, Законом Республики Казахстан «О коллекторской деятельности» и другими нормативными правовыми
+                актами. Агентство включено в реестр коллекторских агентств (регистрационный номер № 02.К.21.010 от 10
+                июня
+                2021 года).Мы индивидуально подбираем наиболее эффективные решения для каждой ситуации. В своей
+                деятельности
+                мы строго придерживаемся принципов профессионализма и законности. Наши сотрудники обладают всеми
+                необходимыми навыками и опытом для максимально эффективного решения проблем клиентов.</div>
+
+        </div>
+    </div>
+
+
+
+    <!-- НАШИ ЦЕННОСТИ -->
+    <div class="container">
+        <div class="main_value" id="value">
+
+
+            <div class="value_title red_color">НАШИ ЦЕННОСТИ</div>
+
+            <div class="value">
+                <h2>УВАЖЕНИЕ</h2>
+                <p>Каждый должник, либо работник Агентства, является прежде всего человеком, который стремится к
+                    благополучию и процветанию. Мы относимся с уважением к каждому, кто обращается в наше Агентство.</p>
+            </div>
+
+            <div class="value">
+                <h2>ДОВЕРИЕ</h2>
+                <p>Выстраивание прозрачных отношений с нашими партнерами, сотрудниками, инвесторами и должниками -
+                    важнейший
+                    элемент финансового преуспевания и развития всей компании.</p>
+            </div>
+
+            <div class="value">
+                <h2>ПРОФЕССИОНАЛИЗМ</h2>
+                <p>Наша команда состоит из высококвалифицированных работников. Мы постоянно учимся, совершенствуемся и
+                    растем для того, чтобы оказывать услуги высокого качества. </p>
+            </div>
+
+            <div class="value">
+                <h2>ПРОГРЕССИВНОСТЬ</h2>
+                <p>Каждый день мы работаем над внедрением инноваций в сфере коллекторских услуг. Мы непрерывно
+                    развиваемся и
+                    совершенствуемся. </p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- ФИЛОСОФИЯ -->
+    <div class="container">
+        <div class="main_filo">
+            <div class="filo_title red_color">ФИЛОСОФИЯ</div>
+            <p class="filo_text text">Мы вносим свой вклад в развитие экономики нашей страны посредством повышения
+                эффективности
+                возвратности и сохранения принципа нахождения оптимального пути решения финансовых вопросов.</p>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- футер -->
+    <footer class="footer">
+        <div id="contacts">
+            <h2 class="foot_title">КОНТАКТЫ</h2>
+            <ul class="phone_list">
+                <li>Email: info@kazcg.kz</li>
+                <li>Телефон: +7 778 746 33 62</li>
+                <li>WhatsApp: +7 778 896 8934</li>
+            </ul>
+        </div>
+
+        <div class="adress">
+            <h2 class="foot_title"> МЕСТОПОЛОЖЕНИЕ</h2>
+            <p class="foot_text">Город Алматы, Ауэзовский район, микрорайон Жетысу-2, дом 85, нежилое помещение 140</p>
+        </div>
+
+        <div class="work">
+            <h2 class="foot_title">ЧАСЫ РАБОТЫ </h2>
+            <p class="foot_text">Понедельник-пятница: <br> <br> <span class="work_time">09:00-18:00 С</span>уббота,
+                воскресенье:
+                выходной
+            </p>
+        </div>
+    </footer>
+
+
+
+    <!-- кнопка звонка -->
+    <a href="tel:+77064065614" class="nav_item nav_call up" onclick="callNumber()"><img
+            src="./images/call_fixed_phone.png" alt=""></a>
+
+
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
