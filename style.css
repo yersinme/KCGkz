@@ -68,12 +68,13 @@ header {
     display: flex;
     justify-content: space-around;
     width: 800px;
+
 }
 
 .header_link {
     margin: 0 10px;
     color: #000;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
 }
 
@@ -97,9 +98,7 @@ header {
     font-size: 10px;
 }
 
-.burger-menu {
-    display: none;
-}
+
 
 .header_main {
     max-width: 100%;
@@ -158,16 +157,13 @@ header {
 /* О нас */
 
 .main_about-us {
-    /* position: relative; */
-    /* overflow: hidden; */
+
     max-width: 100%;
     box-sizing: border-box;
     display: flex;
     align-items: center;
     flex-direction: column;
-    /* gap: 50px; */
-    /* margin: 120px 220px 300px 220px; */
-    /* margin-bottom: 100px; */
+
     padding: 70px 150px 100px 150px;
     background-color: #ebeceeb9;
     border-radius: 15px;
@@ -192,13 +188,12 @@ header {
     background-size: contain;
     background-image: url(./images/Mask\ Group\ 1.png);
     background-repeat: no-repeat;
-    /* margin: 150px 100px 0 100px; */
     padding: 50px;
     padding-top: 50px;
     padding-left: 350px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.171);
     border-radius: 15px;
-}   
+}
 
 .main_value:hover {
     box-shadow: 0 5px 0 rgba(201, 42, 42, 0.979);
@@ -212,7 +207,7 @@ header {
 .value {
     box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.1);
     margin-bottom: 15px;
-    padding: 20px 15px;
+    padding: 20px 5px;
     border-radius: 15px;
 }
 
@@ -234,16 +229,20 @@ header {
 
 .main_filo {
     text-align: center;
-    /* max-width: 1000px; */
-    /* margin: 0 auto; */
-    /* margin-top: 150px; */
-    padding: 50px 80px 70px 80px;
-    background-color: #ebeceeb9;
+    padding: 20px 80px 70px 80px;
+    background-color: #449191b9;
     border-radius: 15px;
 }
 
 .filo_title {
     padding: 30px 50px;
+    color: #fff;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.filo_text {
+    color: #fff;
 }
 
 footer {
@@ -261,6 +260,10 @@ footer {
     gap: 20px;
     justify-content: space-between;
     height: 100%;
+}
+
+.footer div {
+    margin-bottom: 40px;
 }
 
 .foot_title {
@@ -295,53 +298,63 @@ footer {
 }
 
 
+.header_links {
+    display: flex;
+    gap: 10px;
+}
+
+.burger {
+    display: none;
+    /* Скрываем по умолчанию */
+    flex-direction: column;
+    gap: 6px;
+    cursor: pointer;
+}
+
+.line {
+    height: 4px;
+    width: 30px;
+    background-color: #000;
+    /* изменить цвет на ваш */
+    transition: transform 0.3s ease;
+}
 
 
 
 
 
 
-
-
-
-
-
-
-/* Добавьте новые стили для мобильных устройств ниже */
 
 @media (max-width: 768px) {
 
-    /* Примените стили для мобильных устройств здесь */
     .text {
         font-size: 12px;
     }
 
-    header {
-        padding: 20px;
+    .container {
+        padding-bottom: 30px;
     }
 
-    .header_links {
-        flex-direction: column;
-        align-items: center;
+    header {
+        max-width: 100%;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
     }
+
 
     .header_link {
-        margin: 10px 0;
+        /* margin: 10px 0;  */
         font-size: 12px;
-        width: 150px;
+        /* width: 150px; */
+
+
     }
 
     .header_btns {
-        width: 100%;
+        max-width: 100%;
         text-align: center;
-    }
-
-    .burger-menu {
-        display: block;
-    }
-
-    .header_links.show-on-mobile {
-        display: none;
     }
 
     .main {
@@ -372,20 +385,27 @@ footer {
     .main_value {
         margin: 20px;
         padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
-    /* .value_title {
-        font-size: 25px;
+    /* .value_title { 
+        font-size: 25px; 
     } */
 
     .value {
-        padding: 15px;
+        padding: 5px;
         width: 100%;
     }
 
+    .value h2 {
+        font-size: 20px;
+    }
+
     .up img {
-        width: 50px;
-        height: 50px;
+        width: 70px;
+        height: 70px;
         border-radius: 15px;
     }
 
@@ -393,14 +413,20 @@ footer {
         display: flex;
         flex-direction: column;
         align-items: center;
+
+        padding: 40px 20px;
+        padding-bottom: 40px;
     }
 
-    /* .filo_title {
-        font-size: 14px;
-    } */
+    .filo_text {
+        font-size: 22px;
+    }
 
     footer {
         font-size: 18px;
+        display: flex;
+        flex-direction: column;
+        padding-left: 30%;
     }
 
     .foot_title {
@@ -410,4 +436,23 @@ footer {
     .foot_text {
         font-size: 12px;
     }
+
+    .header_links {
+        display: none;
+        text-align: end;
+        /* Скрываем на узких экранах */
+    }
+
+    .burger {
+        display: flex;
+        /* Показываем на узких экранах */
+    }
+
+    .header_link {
+        color: #000;
+        /* изменить цвет на ваш */
+        text-decoration: none;
+        padding-right: 30px;
+    }
+
 }
