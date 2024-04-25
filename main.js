@@ -10,7 +10,7 @@
 // }; 
  
 function openWhatsApp() { 
-    const phoneNumber = '87788968934'; 
+    const phoneNumber = '+77788968934'; 
     const url = 'https://wa.me/' + phoneNumber; 
     window.open(url, '_blank'); 
 }; 
