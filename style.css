@@ -563,4 +563,8 @@ footer {
         padding-right: 30px;
     }
 
+        .modal_window {
+        margin: 10px;
+    }
+
 }
