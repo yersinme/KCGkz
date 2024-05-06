@@ -61,3 +61,38 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }); 
     }); 
 });
+
+
+//  кнопка
+
+
+function showModal() {
+    var modal = document.querySelector('.modal');
+    var navCallUp = document.querySelector('.nav_item.nav_call.up');
+    modal.style.display = 'flex';
+    setTimeout(function() {
+        modal.style.opacity = '1'; 
+    }, 10); 
+    navCallUp.style.display = 'none';
+}
+
+function closeModal() {
+    var modal = document.querySelector('.modal');
+    var navCallUp = document.querySelector('.nav_item.nav_call.up');
+    modal.style.opacity = '0'; 
+    setTimeout(function() {
+        modal.style.display = 'none'; 
+    }, 300); 
+    navCallUp.style.display = 'block';
+}
+
+var navCallUpElement = document.querySelector('.nav_item.nav_call.up');
+navCallUpElement.addEventListener('click', showModal);
+
+var closeButton = document.querySelector('.btn_close');
+closeButton.addEventListener('click', closeModal);
+
+
+
+
+ 
