@@ -511,6 +511,10 @@ footer {
         font-size: 20px;
     }
 
+    .up {
+        right: 30px;
+        bottom: 30px;
+    }
     .up img {
         width: 70px;
         height: 70px;
@@ -563,8 +567,7 @@ footer {
         padding-right: 30px;
     }
 
-        .modal_window {
-        height: 400px;
+    .modal_window {
         margin: 10px;
         margin-bottom: 55px;
     }
