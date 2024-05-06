@@ -564,6 +564,7 @@ footer {
     }
 
         .modal_window {
+        height: 400px;
         margin: 10px;
         margin-bottom: 55px;
     }
