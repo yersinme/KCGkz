@@ -512,12 +512,12 @@ footer {
     }
 
     .up {
-        right: 25px;
+        right: 22px;
         bottom: 100px;
     }
     .up img {
-        width: 65px;
-        height: 65px;
+        width: 60px;
+        height: 60px;
         border-radius: 15px;
     }
 
@@ -573,7 +573,7 @@ footer {
 
     .modal_window {
         margin: 10px;
-        margin-bottom: 55px;
+        margin-bottom: 85px;
     }
 
 }
